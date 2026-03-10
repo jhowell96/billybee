@@ -218,3 +218,6 @@ Exit criteria:
 - 2026-03-10: Added Phase 0 environment contract artifacts in `.env.example` and `src/lib/env.ts`, with startup validation wired in `src/app/layout.tsx`.
 - 2026-03-10: Added baseline testing scaffolding for `BILAAA-15` via `vitest.config.ts`, `playwright.config.ts`, `src/app/page.test.tsx`, and `package.json` test scripts/dependencies.
 - 2026-03-10: Documented runtime strategy, environment setup, and Phase 0 acceptance checks in `README.md`.
+- 2026-03-10: Started `BILAAA-16`; implemented Clerk auth foundation in `src/app/layout.tsx`, `middleware.ts`, `src/app/sign-in/[[...sign-in]]/page.tsx`, `src/app/sign-up/[[...sign-up]]/page.tsx`, `src/app/sign-out/page.tsx`, `src/app/app/page.tsx`, and `src/lib/auth/session.ts`.
+- 2026-03-10: Added Phase 1 unit coverage in `src/lib/auth/session.test.ts` and updated `vitest.config.ts` alias resolution for `@/*` imports.
+- 2026-03-10: Updated `README.md` with Phase 1 auth behavior and route expectations; runtime/test execution remains pending in this environment because `node`/`npm` are not installed.

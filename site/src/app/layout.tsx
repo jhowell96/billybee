@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { assertAppEnvConfigured } from "@/lib/env";
+import { ClerkProvider } from "@clerk/nextjs";
+import { assertAppEnvConfigured, isServerAuthenticatedRuntime } from "@/lib/env";
 import "./globals.css";
 
 assertAppEnvConfigured();
@@ -16,7 +17,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        {isServerAuthenticatedRuntime() ? <ClerkProvider>{children}</ClerkProvider> : children}
+      </body>
     </html>
   );
 }

@@ -87,3 +87,11 @@ For authenticated runtime env guard validation:
 ```sh
 BILLYBEE_RUNTIME_TARGET=server-authenticated npm run build
 ```
+
+## Phase 1 auth foundation
+
+With `BILLYBEE_RUNTIME_TARGET=server-authenticated` and Clerk credentials configured:
+
+- `/sign-in` and `/sign-up` use Clerk-hosted auth components.
+- `/app` is protected by `middleware.ts` and redirects unauthenticated users to `/sign-in`.
+- `src/lib/auth/session.ts` exposes `getCurrentSession()` with normalized user identity for server components and API handlers.
