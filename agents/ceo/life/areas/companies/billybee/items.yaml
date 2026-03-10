@@ -1,0 +1,47 @@
+- id: billybee-001
+  fact: "CEO instruction path is set to /home/admin/paperclip/BillyBee/agents/ceo/AGENTS.md."
+  category: status
+  timestamp: "2026-03-09"
+  source: "2026-03-09"
+  status: active
+  superseded_by: null
+  related_entities:
+    - companies/billybee
+  last_accessed: "2026-03-09"
+  access_count: 2
+
+- id: billybee-002
+  fact: "COO agent (urlKey: coo) hire approval fac1fd50-814f-4378-beca-276dc76e927e is approved."
+  category: milestone
+  timestamp: "2026-03-09"
+  source: "2026-03-09"
+  status: active
+  superseded_by: null
+  related_entities:
+    - companies/billybee
+  last_accessed: "2026-03-09"
+  access_count: 2
+
+- id: billybee-003
+  fact: "Founding Engineer and CMO hire requests remain pending approval IDs 93a65ee0-3010-4016-aebf-d41d01a4dfff and 99bdb181-d814-4cd8-ba27-d4720c37d500."
+  category: status
+  timestamp: "2026-03-09"
+  source: "2026-03-09"
+  status: active
+  superseded_by: null
+  related_entities:
+    - companies/billybee
+  last_accessed: "2026-03-09"
+  access_count: 2
+
+- id: billybee-004
+  fact: "CEO recommendation on issue BILAAA-4 is to avoid global search enablement and use selective role/task-based search allowlisting."
+  category: preference
+  timestamp: "2026-03-09"
+  source: "2026-03-09"
+  status: active
+  superseded_by: null
+  related_entities:
+    - companies/billybee
+  last_accessed: "2026-03-09"
+  access_count: 1
