@@ -1,8 +1,10 @@
 import { beforeEach, describe, expect, it, vi } from "vitest";
 import { getCurrentSession } from "@/lib/auth/session";
 
-const authMock = vi.fn();
-const currentUserMock = vi.fn();
+const { authMock, currentUserMock } = vi.hoisted(() => ({
+  authMock: vi.fn(),
+  currentUserMock: vi.fn()
+}));
 
 vi.mock("@clerk/nextjs/server", () => ({
   auth: authMock,

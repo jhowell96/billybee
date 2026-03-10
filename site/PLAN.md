@@ -218,6 +218,9 @@ Exit criteria:
 - 2026-03-10: Added Phase 0 environment contract artifacts in `.env.example` and `src/lib/env.ts`, with startup validation wired in `src/app/layout.tsx`.
 - 2026-03-10: Added baseline testing scaffolding for `BILAAA-15` via `vitest.config.ts`, `playwright.config.ts`, `src/app/page.test.tsx`, and `package.json` test scripts/dependencies.
 - 2026-03-10: Documented runtime strategy, environment setup, and Phase 0 acceptance checks in `README.md`.
+- 2026-03-10: Resolved `BILAAA-20` blocker by provisioning runner tooling (Node.js/npm/GitHub CLI) and configuring GitHub push auth from local PAT for this workspace.
+- 2026-03-10: Resumed `BILAAA-16`; aligned Next/React version pins for Clerk compatibility, fixed Phase 1 test issues in `src/lib/auth/session.test.ts` and `src/app/page.test.tsx`, and re-verified `npm test` passes locally.
+- 2026-03-10: Follow-up infra work on `BILAAA-20`: provisioned Node.js and npm on the runner (`node v20.19.2`, `npm 9.2.0`); remaining blocker is missing GitHub push credentials for `origin`.
 - 2026-03-10: Started `BILAAA-16`; implemented Clerk auth foundation in `src/app/layout.tsx`, `middleware.ts`, `src/app/sign-in/[[...sign-in]]/page.tsx`, `src/app/sign-up/[[...sign-up]]/page.tsx`, `src/app/sign-out/page.tsx`, `src/app/app/page.tsx`, and `src/lib/auth/session.ts`.
 - 2026-03-10: Added Phase 1 unit coverage in `src/lib/auth/session.test.ts` and updated `vitest.config.ts` alias resolution for `@/*` imports.
 - 2026-03-10: Updated `README.md` with Phase 1 auth behavior and route expectations; runtime/test execution remains pending in this environment because `node`/`npm` are not installed.
