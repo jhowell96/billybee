@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
+import { assertAppEnvConfigured } from "@/lib/env";
 import "./globals.css";
+
+assertAppEnvConfigured();
 
 export const metadata: Metadata = {
   title: "BillyBee",
